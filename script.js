@@ -70,17 +70,16 @@ clearButton.forEach((id) => {
 
 function decimal() {
   let localDecimalMemory = display.value;
-  if(memoryNewNumber){
+  if (memoryNewNumber) {
     localDecimalMemory = "0.";
     memoryNewNumber = false;
-  } else{
-    if(localDecimalMemory.indexOf(".")===-1){
-      localDecimalMemory +=".";
+  } else {
+    if (localDecimalMemory.indexOf(".") === -1) {
+      localDecimalMemory += ".";
     }
   }
   display.value = localDecimalMemory;
 }
-decimalButton.addEventListener ("click", (event) => {
-    decimal(event.target.textContent);
+decimalButton.addEventListener("click", (event) => {
+  decimal(event.target.textContent);
 });
-
