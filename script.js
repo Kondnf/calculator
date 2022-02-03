@@ -83,3 +83,5 @@ function decimal() {
 decimalButton.addEventListener("click", (event) => {
   decimal(event.target.textContent);
 });
+
+ 
